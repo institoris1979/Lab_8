@@ -1,0 +1,15 @@
+#ifndef MATRIX_UTILS_H
+#define MATRIX_UTILS_H
+#include <string>
+
+const int MAX_ROWS = 50;
+const int MAX_COLS = 50;
+
+// Функції введення/виведення
+void readMatrix(std::string filename, double matr[][MAX_COLS], int& m, int& n);
+void writeMatrixMaxCols(std::string filename, const double maxCols[], int n);
+
+// Функція обробки
+void findMaxInColumns(const double matr[][MAX_COLS], int m, int n, double maxCols[]); // Завдання 2 (Matrix24)
+
+#endif

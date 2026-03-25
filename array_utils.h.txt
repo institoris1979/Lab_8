@@ -1,0 +1,15 @@
+#ifndef ARRAY_UTILS_H
+#define ARRAY_UTILS_H
+#include <string>
+
+const int MAX_SIZE = 50; // Максимальний розмір масиву згідно з Лаб 6
+
+// Функції введення/виведення
+void readArray(std::string filename, double arr[], int& n);
+void writeArray(std::string filename, const double arr[], int n);
+
+// Функції обробки
+void insertZeroAfterK(double arr[], int& n, int k); // Завдання 1 (Array102)
+void sortSelectionDescending(double arr[], int n);  // Завдання 3 (Сортування)
+
+#endif
